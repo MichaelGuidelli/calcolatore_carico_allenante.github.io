@@ -22,14 +22,21 @@
       </div>
 
       <div class="input-box">
-        <label for="personal-record">Massimale:</label>
+        <label for="personal-records">Massimale:</label>
 
-        <select name="personal-records" id="personal-record" required>
-          <option value="">-------</option>
-          <option value="140">140-Squat</option>
-          <option value="85">85-Bench</option>
-          <option value="175">175-Deadlift</option>
-        </select>
+        <input
+          type="number"
+          list="personal-record"
+          name="personal-records"
+          placeholder="------"
+          required
+        />
+
+        <datalist name="personal-records" id="personal-record">
+          <option value="140">Squat</option>
+          <option value="85">Banch</option>
+          <option value="175">Deadlift</option>
+        </datalist>
       </div>
 
       <button type="submit" id="calculate-button">Calcola</button>
