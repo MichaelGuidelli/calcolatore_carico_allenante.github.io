@@ -1,8 +1,9 @@
 function retriveNumbers() {
   let percentage = document.getElementById("percentage").value;
   let personalRecord = document.getElementsByName("personal-records")[0].value;
+  let personalRecordNumber = personalRecord.replace(/\D/g, "");
 
-  calculatePercentage(percentage, personalRecord);
+  calculatePercentage(percentage, personalRecordNumber);
 }
 
 function calculatePercentage(percentage, personalRecordNumber) {
